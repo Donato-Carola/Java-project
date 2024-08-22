@@ -18,7 +18,6 @@ public class Product {
     private String description;
 
     
-   
     @Column(name = "image_url", length = 1000) 
     @JsonProperty("image_url")  // Mappa al nome nel JSON
      private String imageUrl; // Usato per memorizzare l'immagine in formato stringa
