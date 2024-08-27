@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 @Entity
-//Specifica il nome della tabella
+
 public class Product {
 
     @Id
@@ -19,8 +19,8 @@ public class Product {
 
     
     @Column(name = "image_url", length = 1000) 
-    @JsonProperty("image_url")  // Mappa al nome nel JSON
-     private String imageUrl; // Usato per memorizzare l'immagine in formato stringa
+    @JsonProperty("image_url")  
+     private String imageUrl; 
 
     // Getters e Setters
     public Long getId() {

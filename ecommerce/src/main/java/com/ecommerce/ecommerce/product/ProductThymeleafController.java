@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
 import java.util.List;
+@CrossOrigin(origins = "*")
 
 
 @Controller
 @RequestMapping("/products")
-public class ProductController {
+public class ProductThymeleafController {
 
     @Autowired
     private ProductRepository productRepository;
